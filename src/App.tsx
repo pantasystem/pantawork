@@ -1,34 +1,18 @@
 import React from 'react';
+import { HomePage } from './HomePage';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { LinksPage } from './LinksPage';
+import { ProfilePage } from './ProfilePage';
 
 function App() {
   return (
-    <div className="bg-amber-100">
-<div className="w-screen h-screen">
-      <div className="header flex items-center p-4 bg-amber-500 fixed w-100 w-screen">
-        <div className="flex items-center">
-          <img 
-              className="inline object-cover w-8 h-8 mr-2 rounded-full align-baseline"
-              src="https://s3.arkjp.net/misskey/46b77a8d-fc00-432c-8bf9-245c01a952cb.png" 
-              alt="icon"/>
-            パン太
-        </div>
-      </div>
-      <div className="flex items-center justify-center h-screen">
-        <div className="text-center">
-          <img 
-            className="inline object-cover w-48 h-48 mr-2 rounded-full align-baseline"
-            src="https://s3.arkjp.net/misskey/46b77a8d-fc00-432c-8bf9-245c01a952cb.png" 
-            alt="icon"/>
-            <h1 className="text-5xl font-bold pt-2">
-            パン太
-            </h1>
-            <p className="pt-2">それはパン。いいえ人間です。</p>
-        </div>
-      </div>
-      
-    </div>
-    </div>
-    
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />}/>
+        <Route path="/links" element={<LinksPage />}/>
+        <Route path="/profile" element={<ProfilePage />}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
