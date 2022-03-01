@@ -1,10 +1,10 @@
-import React from "react";
-import { Template } from "./Template";
+import React from 'react'
+import { Template } from './Template'
 
 export const LinksPage: React.FC = () => {
-    return (
+  return (
         <Template>
             <>まだなんもない</>
         </Template>
-    );
-};
+  )
+}
