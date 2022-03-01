@@ -1,8 +1,8 @@
-import React from "react";
-import { Template } from "./Template";
+import React from 'react'
+import { Template } from './Template'
 
 export const ProfilePage: React.FC = () => {
-    return (
+  return (
         <Template><></></Template>
-    );
+  )
 }

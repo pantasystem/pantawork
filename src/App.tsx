@@ -1,10 +1,10 @@
-import React from 'react';
-import { HomePage } from './HomePage';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { LinksPage } from './LinksPage';
-import { ProfilePage } from './ProfilePage';
+import React from 'react'
+import { HomePage } from './HomePage'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { LinksPage } from './LinksPage'
+import { ProfilePage } from './ProfilePage'
 
-function App() {
+function App () {
   return (
     <BrowserRouter>
       <Routes>
@@ -13,7 +13,7 @@ function App() {
         <Route path="/profile" element={<ProfilePage />}/>
       </Routes>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App
