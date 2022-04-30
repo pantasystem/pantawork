@@ -8,9 +8,12 @@ type Props = {
 export const Template: React.FC<Props> = ({ children }) => {
   return (
     <div className="bg-amber-100">
-      <div className="w-screen h-screen">
+      <div className="w-screen relative">
         <Header />
-        {children}
+        <div className='h-screen overflow-y-scroll'>
+          <div className='w-screen h-16'></div>
+          {children}
+        </div>
 
       </div>
     </div>
