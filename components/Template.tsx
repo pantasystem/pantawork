@@ -10,7 +10,7 @@ export const Template: React.FC<Props> = ({ children }) => {
     <div className="bg-amber-100">
       <div className="w-screen relative">
         <Header />
-        <div className='h-screen overflow-y-scroll'>
+        <div className='h-screen'>
           <div className='w-screen h-16'></div>
           {children}
         </div>
