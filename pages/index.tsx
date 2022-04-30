@@ -4,7 +4,7 @@ import { Template } from '../components/Template'
 const Home: NextPage = () => {
   return (
     <Template>
-      <div className='flex items-center justify-center h-screen'>
+      <div className='flex items-center justify-center h-screen -mt-16'>
         <div className='text-center'>
           <div>
             <img
