@@ -9,7 +9,7 @@ const Home: NextPage = () => {
       <div className='flex items-center justify-center h-screen'>
         <div className='text-center'>
           <div>
-            <Image 
+            <Image
               src={PantaIcon}
               className='mr-2 align-baseline inline object-cover rounded-full'
               alt='icon'
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
               height='200'
             />
           </div>
-          
+
           <h1 className='text-5xl font-bold pt-2'>
             パン太
           </h1>
