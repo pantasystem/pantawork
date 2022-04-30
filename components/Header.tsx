@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import React from 'react'
-import Image from 'next/image'
 
 
 export const Header: React.FC = () => {
@@ -8,11 +7,9 @@ export const Header: React.FC = () => {
     <div className="flex items-center">
 
       <div className='pr-2 items-center flex'>
-        <Image
-          className="inline object-cover rounded-full align-baseline"
+        <img
+          className="inline object-cover rounded-full align-baseline w-10 h-10"
           src='/images/panta-icon.webp'
-          height='24'
-          width='24'
           alt="icon" />
       </div>
 

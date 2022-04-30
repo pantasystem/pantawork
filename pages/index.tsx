@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import Image from 'next/image'
 import { Template } from '../components/Template'
 
 const Home: NextPage = () => {
@@ -8,12 +7,10 @@ const Home: NextPage = () => {
       <div className='flex items-center justify-center h-screen'>
         <div className='text-center'>
           <div>
-            <Image
+            <img
               src='/images/panta-icon.webp'
-              className='mr-2 align-baseline inline object-cover rounded-full'
+              className='mr-2 align-baseline inline object-cover rounded-full w-48 h-48'
               alt='icon'
-              width='200'
-              height='200'
             />
           </div>
 
