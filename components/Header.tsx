@@ -20,9 +20,9 @@ export const Header: React.FC = () => {
       パン太
     </div>
     <div className="flex">
-      {/* <Link to="/">Home</Link>
-        <Link to="/links">Links</Link>
-        <Link to="/profile">Profile</Link> */}
+      <Link href='/'><a className='px-2'>Home</a></Link>
+      <Link href='/links'><a className='px-2'>Links</a></Link>
+      <Link href='/profiel'><a className='px-2'>Profile</a></Link>
     </div>
   </div>)
 }
