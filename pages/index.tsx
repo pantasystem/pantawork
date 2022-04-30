@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import { Template } from '../components/Template'
-import PantaIcon from '../assets/panta-icon.webp'
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +9,7 @@ const Home: NextPage = () => {
         <div className='text-center'>
           <div>
             <Image
-              src={PantaIcon}
+              src='/images/panta-icon.webp'
               className='mr-2 align-baseline inline object-cover rounded-full'
               alt='icon'
               width='200'

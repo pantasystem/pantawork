@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
-import AvatarImage from '../assets/panta-icon.webp';
 
 
 export const Header: React.FC = () => {
@@ -11,7 +10,7 @@ export const Header: React.FC = () => {
       <div className='pr-2 items-center flex'>
         <Image
           className="inline object-cover rounded-full align-baseline"
-          src={AvatarImage}
+          src='/images/panta-icon.webp'
           height='24'
           width='24'
           alt="icon" />
