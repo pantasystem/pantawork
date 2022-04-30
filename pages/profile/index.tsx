@@ -6,7 +6,7 @@ const ProfilePage: NextPage = () => {
     <Template>
       <div className="flex">
         ポートフォリオ作ってる途中で飽きちゃった・・<br />
-        本当はmicroCMSとか使ってharunonが教えてくれたJamstack?とかにしてみたかったけど・・<br />
+        本当はharunonさん(仕事をくれる人)が教えてくれたmicroCMSとか使ってJamstack?な構成にしてみたかったんだけど・・<br />
       </div>
     </Template>
   )
