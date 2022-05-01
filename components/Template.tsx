@@ -18,6 +18,9 @@ export const Template: React.FC<Props> = ({ children, title, meta }) => {
     <div className="bg-amber-100">
       <Head>
         <title>{title ?? ''}</title>
+        {title && <meta property='og:title' content={title} key='title' />}
+        {meta?.description && <meta property='og:description' content={meta?.description ?? ''} key='description' />}
+        {meta?.image && <meta property='og:image' content={meta?.image ?? ''} key='image' />}
       </Head>
       <div className="w-screen relative">
         <AppBar />
