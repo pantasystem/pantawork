@@ -3,7 +3,7 @@ import { Template } from "../../components/Template";
 
 const LinksPage: NextPage = () => {
   return (
-    <Template>
+    <Template title="リンクとか">
       <div>
 
       </div>

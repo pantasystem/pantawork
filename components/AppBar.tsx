@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 
 
-export const Header: React.FC = () => {
+export const AppBar: React.FC = () => {
   return (<div className="header flex items-center p-4 bg-amber-500 fixed w-100 h-16 w-screen justify-between">
     <div className="flex items-center">
 
