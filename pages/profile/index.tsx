@@ -9,7 +9,7 @@ type Props = {
 const ProfilePage: NextPage<Props> = (props: Props) => {
   return (
     <Template>
-      <div className="h-screen w-screen flex items-center justify-center">
+      <div className="h-screen w-screen flex items-center justify-center -mt-16">
         <div className="shadow p-8 rounded-xl bg-amber-200">
           <div className="bg-amber-50 rounded-md mb-4 p-1">
             名前:{props.profile.name}
