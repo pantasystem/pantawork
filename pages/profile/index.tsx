@@ -34,26 +34,26 @@ const ProfilePage: NextPage<Props> = (props: Props) => {
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const profile = await client.get({ endpoint: "profile" });
   const pojo = await ProfileSchema.safeParseAsync(profile);
-  if (pojo.success) {
-    const props: Props = {
-      profile: pojo.data,
-    };
-    return {
-      props: props,
-    }
-  } else {
-    throw pojo.error;
-  }
-  // const props: Props = {
-  //   profile: {
-  //     location: '滋賀県のどこか',
-  //     whereabouts: 'ない',
-  //     name: 'パン太',
-  //     description: 'パン太だよ',
+  // if (pojo.success) {
+  //   const props: Props = {
+  //     profile: pojo.data,
+  //   };
+  //   return {
+  //     props: props,
   //   }
-  // };
-  // return {
-  //   props: props,
-  // };
+  // } else {
+  //   throw pojo.error;
+  // }
+  const props: Props = {
+    profile: {
+      location: '滋賀県のどこか',
+      whereabouts: 'ない',
+      name: 'パン太',
+      description: 'パン太だよ',
+    }
+  };
+  return {
+    props: props,
+  };
 };
 export default ProfilePage;
