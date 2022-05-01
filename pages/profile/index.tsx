@@ -8,7 +8,7 @@ type Props = {
 
 const ProfilePage: NextPage<Props> = (props: Props) => {
   return (
-    <Template>
+    <Template title="プロフィール">
       <div className="h-screen w-screen flex items-center justify-center -mt-16">
         <div className="shadow p-8 rounded-xl bg-amber-200">
           <div className="bg-amber-50 rounded-md mb-4 p-1">
@@ -26,7 +26,6 @@ const ProfilePage: NextPage<Props> = (props: Props) => {
           </div>
         </div>
       </div>
-
     </Template>
   )
 };

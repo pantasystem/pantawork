@@ -3,7 +3,7 @@ import { Template } from '../components/Template'
 
 const Home: NextPage = () => {
   return (
-    <Template>
+    <Template title='パン太'>
       <div className='flex items-center justify-center h-screen -mt-16'>
         <div className='text-center'>
           <div>
