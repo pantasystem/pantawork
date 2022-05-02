@@ -15,4 +15,19 @@ export const ProfileSchema = zod.object({
   misskey: zod.string().optional(),
 });
 
+export const NewSchema = zod.object({
+  id: zod.string(),
+  title: zod.string(),
+  content: zod.string(),
+  image: zod.string().optional(),
+});
+
+export const NewsResSchema = zod.object({
+  contents: zod.array(NewSchema),
+  totalCount: zod.number(),
+  offset: zod.number(),
+  limit: zod.number(),
+});
+export const NewsSchema = zod.array(NewSchema);
+export type New = zod.infer<typeof NewSchema>;
 export type Profile = zod.infer<typeof ProfileSchema>;
