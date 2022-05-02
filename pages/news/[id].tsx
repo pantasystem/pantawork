@@ -4,16 +4,13 @@ import { client, New, NewSchema, NewsResSchema } from "../api";
 
 const NewPage: NextPage<Props> = (props) => {
   return (
-    <Template title="お知らせとか">
-      <div>
+    <Template title={props.new.title}>
+      <div dangerouslySetInnerHTML={{ __html: props.new.content }}>
 
       </div>
     </Template>
   );
 };
-
-const PAGE_PER = 10;
-
 
 type Props = {
   new: New,
@@ -33,7 +30,13 @@ export const getStaticProps: GetStaticProps = async (context) => {
   };
 };
 
-
+export const getStaticPaths: GetStaticPaths = async (context) => {
+  const data = await client.get({ endpoint: "news" });
+  const paths = data.contents.map((content: any) => `/news/${content.id}`);
+  return {
+    paths, fallback: false
+  };
+};
 
 
 export default NewPage;
